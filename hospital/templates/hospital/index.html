@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>HOME - ADMIN</title>
+
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+    </head>
+    <body>
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <label for="inputName4">Name & Surname:</label>
+                    <input type="text" class="form-control" id="inputName4" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label for="inputStaffNo4">Staff Number:</label>
+                    <input type="number" class="form-control" id="inputStaffNo4" placeholder="StaffNo">
+                </div>
+                <div class="form-group">
+                    <label for="inputID">ID Number:</label>
+                    <input type="number" class="form-control" id="inputID" placeholder="ID">
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress2">Specialization:</label>
+                    <input type="text" class="form-control" id="inputSpecialization" placeholder="Specialization">
+                </div>
+                <div class="form-group">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group">
+                    <label for="Department">Department:</label>
+                    <select id="inputDepartment" name="Department" class="form-control">
+                        <option value="Dentist">Dentistry</option>
+                        <option value="Cardiology">Cardiology</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
